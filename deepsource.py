@@ -1,6 +1,8 @@
 
 
-def append(number, number_list=[]):
+def append(number, number_list=None):
+    if number_list is None:
+        number_list = []
     number_list.append(number)
     print(number_list)
     return number_list
